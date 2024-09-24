@@ -8,6 +8,11 @@ character = load_image('character.png')
 
 def run_circle():
     print('CIRCLE')
+
+    clear_canvas_now()
+    character.draw_now(400,300)
+    delay(0.1)
+    
     pass    #pass는 빈내용을 뜻함
 
 def run_rectangle():
@@ -17,6 +22,7 @@ def run_rectangle():
 while True:
     run_rectangle()
     run_circle()
+    break
 
     
 close_canvas()
