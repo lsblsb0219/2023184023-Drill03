@@ -50,15 +50,32 @@ def run_left():
 def run_rectangle():
     print('RECTANGLE')
 
-    #run_top()
-    #run_right()
-    #run_bottom()
+    run_bottom()
     run_left()
+    run_top()
+    run_right()
 
+def run_right_diagonal():
+    print('RIGHT_DIAGONAL')
+    pass
+
+def run_left_diagonal():
+    print('LEFT_DIAGONAL')
+    pass
+
+def run_triangle():
+    print('TRIANGLE')
+
+    run_bottom()
+    run_left_diagonal()
+    run_right_diagonal()
+    
+    pass
 
 while True:
     #run_circle()
     run_rectangle()
+    run_triangle()
     
     break
 
