@@ -28,21 +28,25 @@ def run_circle():
 
 def run_top():
     print('TOP')
+    
     for x in range(0, 800, 10):
         draw_character(x, 550)
 
 def run_right():
     print('RIGHT')
+    
     for y in range(550, 0, -10):
         draw_character(790, y)
 
 def run_bottom():
     print('BOTTOM')
+    
     for x in range(800, 0, -10):
         draw_character(x, 0)
 
 def run_left():
     print('LEFT')
+    
     for y in range(0, 550, 10):
         draw_character(0, y)
 
@@ -55,13 +59,21 @@ def run_rectangle():
     run_top()
     run_right()
 
-def run_right_diagonal():
-    print('RIGHT_DIAGONAL')
-    pass
-
 def run_left_diagonal():
     print('LEFT_DIAGONAL')
-    pass
+
+    x = 0
+    for y in range(0, 400, 10):
+        x = x + 10
+        draw_character(x, y)
+
+def run_right_diagonal():
+    print('RIGHT_DIAGONAL')
+
+    x = 400
+    for y in range(400, 0, -10):
+        x = x + 10
+        draw_character(x, y)
 
 def run_triangle():
     print('TRIANGLE')
@@ -74,7 +86,7 @@ def run_triangle():
 
 while True:
     #run_circle()
-    run_rectangle()
+    #run_rectangle()
     run_triangle()
     
     break
