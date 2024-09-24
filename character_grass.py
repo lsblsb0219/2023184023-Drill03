@@ -9,7 +9,7 @@ character = load_image('character.png')
 def draw_character(x, y):
     clear_canvas_now()
     character.draw_now(x,y)
-    delay(0.1)
+    delay(00.1)
 
 def run_circle():
     print('CIRCLE')
@@ -20,7 +20,7 @@ def run_circle():
     for degree in range(0, 360, 3):
         theta = math.radians(degree)
         x = r * math.cos(theta) + cx
-        y = r * math.sin(theta) + cy
+        y = -r * math.sin(theta) + cy
         
         draw_character(x,y)
     
@@ -85,11 +85,11 @@ def run_triangle():
     pass
 
 while True:
-    #run_circle()
+    run_circle()
     #run_rectangle()
-    run_triangle()
-    
-    break
+    #run_triangle()
+
+    break;
 
     
 close_canvas()
