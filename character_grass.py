@@ -9,7 +9,7 @@ character = load_image('character.png')
 def draw_character(x, y):
     clear_canvas_now()
     character.draw_now(x,y)
-    delay(00.1)
+    delay(0.1)
 
 def run_circle():
     print('CIRCLE')
@@ -86,8 +86,8 @@ def run_triangle():
 
 while True:
     run_circle()
-    #run_rectangle()
-    #run_triangle()
+    run_rectangle()
+    run_triangle()
 
     break;
 
